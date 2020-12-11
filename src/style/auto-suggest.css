@@ -1,0 +1,103 @@
+.auto-suggest-container {
+  width: 50%;
+  position: absolute;
+  top:20px;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+.auto-suggest {
+  font-size: 14px;
+  color: rgb(44, 44, 44);
+  border-radius: 8px;
+  padding: 5px;
+  border: 2px solid rgb(255, 255, 255);
+
+}
+
+.auto-suggest input[type="text"] {
+  width: 75%;
+  padding: 10px 10px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.01);
+  transition: 0.5s;
+}
+
+.search-icon {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  float: right;
+  fill: rgb(255, 255, 255);
+}
+
+.auto-suggest input[type="text"]::placeholder {
+  color: white;
+  /* background-color: rgba(255, 255, 255, 0.01); */
+}
+
+.auto-suggest input[type="text"]:focus {
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+.auto-suggest ul {
+  font-size: 14px;
+  list-style-type: none;
+  text-align: left;
+  color: white;
+  /* List color */
+  background-color: rgba(45, 41, 90, 0.8);
+  /* For Firefox Browsers */
+  scrollbar-color: rgb(228, 228, 228) rgb(167, 167, 167);
+  /* For Firefox Browsers */
+  scrollbar-width: thin;
+  overflow-y: scroll;
+  height: 25vh;
+  padding: 0;
+  margin: 0;;
+  border-radius: 8px;
+}
+
+.auto-suggest ul li {
+  padding: 10px 10px;
+
+}
+
+.auto-suggest ul li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.auto-suggest ul::-webkit-scrollbar {
+  width: 5px;
+  /* width of the entire scrollbar */
+}
+
+.auto-suggest ul::-moz-scrollbar {
+  width: 5px;
+}
+
+.auto-suggest ul::-webkit-scrollbar-track {
+  background: rgb(212, 212, 212);
+  /* color of the tracking area */
+}
+
+.auto-suggest ul::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 3px solid rgb(136, 136, 136);
+}
+@media only screen and (max-width: 600px) {
+  .auto-suggest-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

@@ -1,0 +1,45 @@
+
+
+.today .temp-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+}
+
+.temp-info .temp-place {
+  font-size: 1.8em;
+}
+
+.temp-info .temp-degree {
+  font-size: 2em;
+}
+
+.temp-info .temp-icon {
+  font-size: 4em;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.days .day-name {
+  font-size: 1.35em;
+}
+.days .day-date {
+  font-weight: light;
+  font-size: 0.75em;
+}
+.days .day-icon {
+  font-size: 3.8em;
+}
+.days .day-temp {
+  font-size: 1.65em;
+}
+.days .temp-sky {
+  font-size: 1.2em;
+}
